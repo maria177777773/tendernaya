@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Тендерная · 8 вариантов логотипа и стиля">
+<meta property="og:description" content="Тендерная: 8 вариантов логотипа и стиля платформы смет">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}body{margin:0;font:14px system-ui;background:#f7f7f5}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Тендерная · 8 вариантов логотипа и стиля</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica:wght@500;900&family=Golos+Text:wght@400;500;700&family=IBM+Plex+Mono:wght@500&family=Oswald:wght@700&family=Rubik+Mono+One&family=Unbounded:wght@800&display=swap&subset=cyrillic">
+<style>
+/* Тихая серая витрина вокруг громких плакатов: каждый вариант = плакат 16:9 + значок + превью ссылки + экран сметы. */
+:root{
+  --paper:#F1F2F4; --card:#FFFFFF; --ink:#15161A; --muted:#5B5F6B; --line:#D9DBE1; --chip:#E6E8EC;
+  --go:#15161A; --go-ink:#FFFFFF;
+  --f-body:'Golos Text','Helvetica Neue',Arial,sans-serif;
+  --f-mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  --fs-s:14px; --fs-m:17px; --fs-l:20px; --fs-xxl:clamp(34px,4.4vw,56px);
+  --btn-h:44px; --wrap:1400px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--paper:#111216;--card:#1A1B21;--ink:#ECEDF1;--muted:#A3A7B3;--line:#2C2E36;--chip:#24262D;--go:#ECEDF1;--go-ink:#111216;color-scheme:dark}
+}
+:root[data-theme="dark"]{--paper:#111216;--card:#1A1B21;--ink:#ECEDF1;--muted:#A3A7B3;--line:#2C2E36;--chip:#24262D;--go:#ECEDF1;--go-ink:#111216;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:var(--fs-m);line-height:1.5;padding:0 20px}
+.wrap{max-width:var(--wrap);margin:0 auto}
+h1,h2{text-wrap:balance;margin:0;line-height:1.1}
+p{margin:0}
+
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--paper);border-bottom:1px solid var(--line);margin:0 -20px;padding:10px 20px}
+.top .wrap{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.top b{font-weight:700;margin-right:6px}
+.nav{display:flex;gap:6px;flex-wrap:wrap}
+.nav a{display:inline-flex;align-items:center;height:36px;padding:0 12px;border-radius:999px;background:var(--chip);color:var(--ink);text-decoration:none;font-size:var(--fs-s);font-weight:500;white-space:nowrap}
+.nav a.on{background:var(--ink);color:var(--paper)}
+.nav a[hidden]{display:none}
+.restore{display:flex;gap:6px;flex-wrap:wrap;margin-left:auto}
+.restore button{height:36px;padding:0 12px;border-radius:999px;border:1px dashed var(--muted);background:transparent;color:var(--muted);font:500 var(--fs-s) var(--f-body);cursor:pointer}
+
+.intro{padding-block:48px 24px;display:grid;gap:20px}
+.intro h1{font-size:var(--fs-xxl);font-weight:700;letter-spacing:-.02em}
+.lead{font-size:var(--fs-l);max-width:80ch;color:var(--muted)}
+.lead b{color:var(--ink)}
+
+.v{padding-block:44px;border-top:1px solid var(--line);display:grid;gap:18px;scroll-margin-top:72px}
+.v[hidden]{display:none}
+.vh{display:flex;gap:14px 18px;align-items:center;flex-wrap:wrap}
+.vnum{font:500 var(--fs-m) var(--f-mono);background:var(--chip);border-radius:8px;padding:4px 10px}
+.vh h2{font-size:28px;font-weight:700}
+.acts{display:flex;gap:8px;margin-left:auto}
+.acts button{height:var(--btn-h);border-radius:10px;font:700 var(--fs-m) var(--f-body);cursor:pointer;padding:0 18px}
+.ok{background:var(--go);color:var(--go-ink);border:0}
+.x{width:var(--btn-h);padding:0!important;background:transparent;color:var(--ink);border:1px solid var(--line);font-size:24px!important}
+.concept{flex-basis:100%;color:var(--muted);font-size:var(--fs-m)}
+.poster{border-radius:14px;overflow:hidden;line-height:0;background:#111}
+.poster svg{width:100%;height:auto;display:block}
+
+/* применения */
+.apps{display:grid;grid-template-columns:180px minmax(260px,340px) minmax(0,1fr);gap:20px;align-items:start}
+@media (max-width:1080px){.apps{grid-template-columns:180px minmax(0,1fr)}.apps .scr{grid-column:1/-1}}
+@media (max-width:560px){.apps{grid-template-columns:1fr}}
+.cap{font:500 var(--fs-s) var(--f-mono);color:var(--muted);margin-bottom:8px}
+.icon svg{width:160px;height:160px;display:block;border-radius:36px}
+.lnk{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.lnk .im{height:150px;display:flex;align-items:center;justify-content:center}
+.lnk .im svg{width:110px;height:110px}
+.lnk .tx{padding:12px 14px;display:grid;gap:4px}
+.lnk .tx b{font-size:var(--fs-m)}
+.lnk .tx span{font-size:var(--fs-s);color:var(--muted)}
+
+/* экран сметы, тема из переменных варианта */
+.scr{background:var(--s-bg);color:var(--s-fg);border-radius:14px;padding:20px;display:grid;gap:14px;font-family:var(--f-body);font-size:17px;line-height:1.4}
+.s-top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.s-mark{width:44px;height:44px;flex:none}
+.s-word{font-family:var(--s-fd);font-weight:var(--s-fw);font-size:26px;letter-spacing:var(--s-ls,0);text-transform:var(--s-tt,none)}
+.s-ver{margin-left:auto;font:500 14px var(--f-mono);border:2px solid currentColor;padding:4px 10px;border-radius:var(--s-r)}
+.s-lt{font-weight:700;font-size:20px}
+.s-dl{font-size:17px;opacity:.85}
+.s-who{display:flex;gap:12px;flex-wrap:wrap}
+.s-who label{display:grid;gap:4px;font-size:14px;font-weight:500;flex:1 1 180px}
+.s-who select,.s-who input{height:44px;border-radius:var(--s-r);border:var(--s-bd);background:var(--s-card);color:var(--s-cfg);font:500 17px var(--f-body);padding:0 12px;width:100%}
+.s-card{background:var(--s-card);color:var(--s-cfg);border-radius:var(--s-r);border:var(--s-bd);padding:6px 14px 12px;overflow-x:auto}
+.s-card table{width:100%;border-collapse:collapse;min-width:520px}
+.s-card th,.s-card td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--s-line);vertical-align:top}
+.s-card th{font:500 14px var(--f-mono);opacity:.75}
+.s-card td.n,.s-card th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.s-card tr.sec td{font-family:var(--s-fd);font-weight:var(--s-fw);font-size:17px;text-transform:var(--s-tt,none);padding-top:16px;border-bottom:2px solid var(--s-cfg)}
+.s-card tr.com td{border-bottom:1px solid var(--s-line);padding-top:0}
+.s-card .bub{display:inline-block;background:var(--s-hi);color:var(--s-hiink);padding:6px 10px;border-radius:var(--s-r);font-size:14px;font-weight:500}
+.s-card .src{display:block;font:500 14px var(--f-mono);opacity:.7}
+.s-hint{border:2px dashed currentColor;border-radius:var(--s-r);padding:10px 12px;font-size:17px}
+.s-hint b{font-weight:700}
+.s-foot{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.s-sum{font-family:var(--s-fd);font-weight:var(--s-fw);font-size:24px;text-transform:var(--s-tt,none)}
+.s-btn{margin-left:auto;height:52px;padding:0 24px;border:0;border-radius:var(--s-r);background:var(--s-ac);color:var(--s-acink);font:700 20px var(--f-body);cursor:pointer}
+.s-note{font-size:14px;opacity:.8}
+
+.foot{padding-block:40px 60px;color:var(--muted);font-size:var(--fs-s);border-top:1px solid var(--line)}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:12px 18px;border-radius:12px;font-weight:500;z-index:30}
+</style>
+
+<!-- знаки: одна библиотека, цвета через переменные на <use> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="m1" viewBox="0 0 200 200">
+      <g transform="rotate(-38 104 96)">
+        <rect x="46" y="34" width="116" height="56" rx="14" style="fill:var(--a)"/>
+        <rect x="64" y="28" width="16" height="68" rx="6" style="fill:var(--b)"/>
+        <rect x="128" y="28" width="16" height="68" rx="6" style="fill:var(--b)"/>
+        <rect x="96" y="86" width="18" height="96" rx="9" style="fill:var(--a)"/>
+      </g>
+      <rect x="18" y="164" width="96" height="22" rx="8" style="fill:var(--a)"/>
+    </symbol>
+    <symbol id="m2" viewBox="0 0 200 200">
+      <rect width="200" height="200" style="fill:var(--a)"/>
+      <rect x="34" y="40" width="132" height="30" style="fill:var(--b)"/>
+      <rect x="85" y="40" width="30" height="124" style="fill:var(--b)"/>
+      <circle cx="152" cy="150" r="20" style="fill:var(--c)"/>
+    </symbol>
+    <symbol id="m3" viewBox="0 0 200 200">
+      <path d="M46 18 H128 L162 52 V184 H46 Z" style="fill:var(--a)"/>
+      <path d="M128 18 V52 H162 Z" style="fill:var(--b)"/>
+      <rect x="66" y="70" width="76" height="10" style="fill:var(--b)"/>
+      <rect x="66" y="92" width="56" height="10" style="fill:var(--b)"/>
+      <text x="104" y="168" text-anchor="middle" font-family="Unbounded,'Arial Black',sans-serif" font-weight="800" font-size="66" style="fill:var(--b)">₽</text>
+    </symbol>
+    <symbol id="m4" viewBox="0 0 200 200">
+      <rect x="24" y="34" width="152" height="150" rx="14" style="fill:var(--a)"/>
+      <rect x="24" y="34" width="152" height="44" rx="14" style="fill:var(--b)"/>
+      <rect x="24" y="62" width="152" height="16" style="fill:var(--b)"/>
+      <rect x="58" y="18" width="14" height="34" rx="7" style="fill:var(--b)"/>
+      <rect x="128" y="18" width="14" height="34" rx="7" style="fill:var(--b)"/>
+      <text x="100" y="164" text-anchor="middle" font-family="Oswald,'Arial Narrow',sans-serif" font-weight="700" font-size="84" style="fill:var(--b)">−1</text>
+    </symbol>
+    <symbol id="m5" viewBox="0 0 200 200">
+      <line x1="128" y1="128" x2="182" y2="182" stroke-linecap="round" stroke-width="28" style="stroke:var(--a)"/>
+      <circle cx="84" cy="84" r="62" stroke-width="20" style="fill:var(--b);stroke:var(--a)"/>
+      <path d="M40 84 Q84 46 128 84 Q84 122 40 84 Z" style="fill:var(--a)"/>
+      <circle cx="84" cy="84" r="15" style="fill:var(--c)"/>
+    </symbol>
+    <symbol id="m6" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="88" fill="none" stroke-width="12" style="stroke:var(--a)"/>
+      <circle cx="100" cy="100" r="66" fill="none" stroke-width="4" style="stroke:var(--a)"/>
+      <rect x="62" y="58" width="76" height="20" style="fill:var(--a)"/>
+      <rect x="90" y="58" width="20" height="62" style="fill:var(--a)"/>
+      <text x="100" y="152" text-anchor="middle" font-family="Unbounded,'Arial Black',sans-serif" font-weight="800" font-size="27" style="fill:var(--a)">100%</text>
+    </symbol>
+    <symbol id="m7" viewBox="0 0 200 200">
+      <rect x="20" y="26" width="160" height="40" style="fill:var(--a)"/>
+      <rect x="76" y="78" width="48" height="18" style="fill:var(--a)"/>
+      <rect x="76" y="104" width="48" height="18" style="fill:var(--a)"/>
+      <rect x="76" y="130" width="48" height="18" style="fill:var(--a)"/>
+      <rect x="76" y="156" width="48" height="18" style="fill:var(--a)"/>
+      <rect x="132" y="156" width="30" height="18" style="fill:var(--b)"/>
+    </symbol>
+    <symbol id="m8" viewBox="0 0 200 200">
+      <rect x="18" y="20" width="164" height="50" style="fill:var(--a)"/>
+      <circle cx="100" cy="106" r="34" style="fill:var(--b)"/>
+      <path d="M64 146 H136 L100 190 Z" style="fill:var(--c)"/>
+    </symbol>
+  </defs>
+</svg>
+
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <b>Тендерная</b>
+  <nav class="nav" id="nav"></nav>
+  <div class="restore" id="restore"></div>
+</div></header>
+
+<main class="wrap">
+  <section class="intro">
+    <h1>Тендерная: 8 вариантов логотипа и стиля</h1>
+    <p class="lead">Ориентир из книжного клуба: <b>G3 поп-арт</b>, <b>G5 «Клуб»</b>, <b>G15</b>, <b>G19</b>, <b>G20</b>. Под каждым плакатом три применения: значок платформы, превью ссылки, которую Мария шлёт менеджеру, и экран сметы, куда менеджер попадает по ссылке. Позиции и цены в смете взяты из прайсов Артактива, Проинтерактива и Аренды Плюс (средняя, снимок 13.07.2026). Лот и даты для примера. Лишнее убирай крестиком.</p>
+  </section>
+
+  <!-- ============ T1 ============ -->
+  <section class="v" id="t1" data-name="Поп-арт, молоток">
+    <div class="vh">
+      <span class="vnum">T1</span><h2>Поп-арт · молоток</h2>
+      <div class="acts"><button class="ok" type="button">Утверждаю T1</button><button class="x" type="button" aria-label="Убрать T1 из сравнения">×</button></div>
+      <p class="concept">по мотивам G3: аукционный молоток вместо берета, четыре оттиска как у Уорхола · подход: поп-арт, жирный моноширинный шрифт</p>
+    </div>
+    <div class="poster">
+      <svg viewBox="0 0 1600 900" role="img" aria-label="Плакат Тендерная: четыре цветных оттиска молотка">
+        <rect width="1600" height="900" fill="#111"/>
+        <rect x="0" y="0" width="450" height="450" fill="#FF2E93"/>
+        <use href="#m1" x="79" y="79" width="320" height="320" style="--a:#FFE600;--b:#FFE600"/>
+        <use href="#m1" x="65" y="65" width="320" height="320" style="--a:#111;--b:#FF2E93"/>
+        <rect x="450" y="0" width="450" height="450" fill="#00C2FF"/>
+        <use href="#m1" x="529" y="79" width="320" height="320" style="--a:#FF2E93;--b:#FF2E93"/>
+        <use href="#m1" x="515" y="65" width="320" height="320" style="--a:#111;--b:#00C2FF"/>
+        <rect x="0" y="450" width="450" height="450" fill="#FFE600"/>
+        <use href="#m1" x="79" y="529" width="320" height="320" style="--a:#00C2FF;--b:#00C2FF"/>
+        <use href="#m1" x="65" y="515" width="320" height="320" style="--a:#111;--b:#FFE600"/>
+        <rect x="450" y="450" width="450" height="450" fill="#FF6B00"/>
+        <use href="#m1" x="529" y="529" width="320" height="320" style="--a:#FFE600;--b:#FFE600"/>
+        <use href="#m1" x="515" y="515" width="320" height="320" style="--a:#111;--b:#FF6B00"/>
+        <g font-family="'Rubik Mono One','Arial Black',sans-serif" font-size="150" fill="#FFFFFF">
+          <text x="960" y="240" textLength="560" lengthAdjust="spacingAndGlyphs">ТЕН</text>
+          <text x="960" y="400" textLength="560" lengthAdjust="spacingAndGlyphs">ДЕР</text>
+          <text x="960" y="560" textLength="560" lengthAdjust="spacingAndGlyphs">НАЯ</text>
+        </g>
+        <text x="962" y="660" font-family="Unbounded,'Arial Black',sans-serif" font-weight="800" font-size="50" fill="#FFE600">Смета к утру,</text>
+        <text x="962" y="724" font-family="Unbounded,'Arial Black',sans-serif" font-weight="800" font-size="50" fill="#FFE600">тендер за вами</text>
+        <text x="962" y="840" font-family="'IBM Plex Mono',monospace" font-weight="500" font-size="26" fill="#FF2E93" letter-spacing="2">44-ФЗ · 223-ФЗ · КОММЕРЧЕСКИЕ</text>
+      </svg>
+    </div>
+    <div class="apps" data-v="t1"></div>
+  </section>
+
+  <!-- ============ T2 ============ -->
+  <section class="v" id="t2" data-name="Клуб, швейцарка">
+    <div class="vh">
+      <span class="vnum">T2</span><h2>Клуб · швейцарка</h2>
+      <div class="acts"><button class="ok" type="button">Утверждаю T2</button><button class="x" type="button" aria-label="Убрать T2 из сравнения">×</button></div>
+      <p class="concept">по мотивам G5: карточка лота как афиша, название гигантскими буквами · подход: швейцарская типографика, электрический синий и кислотный жёлтый</p>
+    </div>
+    <div class="poster">
+      <svg viewBox="0 0 1600 900" role="img" aria-label="Плакат ТЕНДЕРНАЯ гигантскими буквами">
+        <rect width="1600" height="900" fill="#1E2BFF"/>
+        <g font-family="'IBM Plex Mono',monospace" font-weight="500" font-size="26" fill="#E9FF1F" letter-spacing="2">
+          <text x="60" y="92">ЛОТ 0.1</text>
+          <text x="440" y="92">44-ФЗ · 223-ФЗ · КОММЕРЧЕСКИЕ</text>
+          <text x="1540" y="92" text-anchor="end">ПОДАЧА ЗА 24 Ч</text>
+        </g>
+        <rect x="60" y="118" width="1480" height="4" fill="#E9FF1F"/>
+        <g font-family="Geologica,'Helvetica Neue',sans-serif" font-weight="500" font-size="50" fill="#FFFFFF">
+          <text x="60" y="214">читаем ТЗ,</text>
+          <text x="60" y="274">считаем смету,</text>
+          <text x="60" y="334">подаём первыми.</text>
+        </g>
+        <circle cx="1430" cy="262" r="104" fill="#FFFFFF"/>
+        <use href="#m2" x="1366" y="198" width="128" height="128" style="--a:#FFFFFF;--b:#1E2BFF;--c:#E9FF1F"/>
+        <text x="44" y="830" textLength="1512" lengthAdjust="spacingAndGlyphs" font-family="Geologica,'Helvetica Neue',sans-serif" font-weight="900" font-size="300" fill="#E9FF1F">ТЕНДЕРНАЯ</text>
+      </svg>
+    </div>
+    <div class="apps" data-v="t2"></div>
+  </section>
+
+  <!-- ============ T3 ============ -->
+  <section class="v" id="t3" data-name="15 смет">
+    <div class="vh">
+      <span class="vnum">T3</span><h2>15 смет</h2>
+      <div class="acts"><button class="ok" type="button">Утверждаю T3</button><button class="x" type="button" aria-label="Убрать T3 из сравнения">×</button></div>
+      <p class="concept">по мотивам G15: сетка цветных смет, одна плитка спрашивает «Подтверждаешь?» · подход: поп-арт сеткой, знак документ с рублём</p>
+    </div>
+    <div class="poster">
+      <svg viewBox="0 0 1600 900" role="img" aria-label="Сетка из 14 цветных смет и плитка Тендерная">
+        <rect width="1600" height="900" fill="#111"/>
+        <g id="grid15"></g>
+      </svg>
+    </div>
+    <div class="apps" data-v="t3"></div>
+  </section>
+
+  <!-- ============ T4 ============ -->
+  <section class="v" id="t4" data-name="Афиша подачи">
+    <div class="vh">
+      <span class="vnum">T4</span><h2>Афиша подачи</h2>
+      <div class="acts"><button class="ok" type="button">Утверждаю T4</button><button class="x" type="button" aria-label="Убрать T4 из сравнения">×</button></div>
+      <p class="concept">по мотивам G19: синий блок с жёлтым календарём «минус сутки», дата подачи крупно · подход: афиша, узкий плакатный шрифт</p>
+    </div>
+    <div class="poster">
+      <svg viewBox="0 0 1600 900" role="img" aria-label="Афиша подачи заявки: календарь и дата">
+        <rect width="1600" height="900" fill="#FFFFFF"/>
+        <rect x="60" y="60" width="680" height="780" fill="#1F2BFF"/>
+        <use href="#m4" x="120" y="170" width="560" height="560" style="--a:#FFD400;--b:#0A0F3D"/>
+        <text x="820" y="170" font-family="Oswald,'Arial Narrow',sans-serif" font-weight="700" font-size="84" fill="#0A0F3D">ПОДАЧА ЗАЯВКИ</text>
+        <text x="814" y="360" font-family="Oswald,'Arial Narrow',sans-serif" font-weight="700" font-size="200" fill="#1F2BFF">23.10</text>
+        <text x="822" y="430" font-family="'Golos Text',Arial,sans-serif" font-weight="700" font-size="40" fill="#0A0F3D">за сутки до дедлайна из ТЗ</text>
+        <rect x="822" y="470" width="718" height="4" fill="#0A0F3D"/>
+        <text x="822" y="548" font-family="'Golos Text',Arial,sans-serif" font-weight="700" font-size="44" fill="#0A0F3D">Лот: сцена, свет, мебель</text>
+        <text x="822" y="600" font-family="'Golos Text',Arial,sans-serif" font-weight="500" font-size="32" fill="#0A0F3D">дата и лот для примера</text>
+        <text x="820" y="760" font-family="Oswald,'Arial Narrow',sans-serif" font-weight="700" font-size="76" fill="#1F2BFF">ТЕНДЕРНАЯ</text>
+        <text x="822" y="812" font-family="'IBM Plex Mono',monospace" font-weight="500" font-size="22" fill="#0A0F3D" letter-spacing="2">АРТАКТИВ · ПРОИНТЕРАКТИВ · АРЕНДА ПЛЮС</text>
+      </svg>
+    </div>
+    <div class="apps" data-v="t4"></div>
+  </section>
+
+  <!-- ============ T5 ============ -->
+  <section class="v" id="t5" data-name="Взгляд, лупа">
+    <div class="vh">
+      <span class="vnum">T5</span><h2>Взгляд · лупа</h2>
+      <div class="acts"><button class="ok" type="button">Утверждаю T5</button><button class="x" type="button" aria-label="Убрать T5 из сравнения">×</button></div>
+      <p class="concept">по мотивам G20: глаз в лупе на весь плакат, «видим каждую позицию в ТЗ» · подход: розовый и жёлтый, чёрная плашка снизу</p>
+    </div>
+    <div class="poster">
+      <svg viewBox="0 0 1600 900" role="img" aria-label="Плакат: глаз в лупе">
+        <rect width="1600" height="900" fill="#FF2E93"/>
+        <use href="#m5" x="450" y="10" width="720" height="720" style="--a:#111;--b:#FFE600;--c:#FF2E93"/>
+        <text x="60" y="110" font-family="'Rubik Mono One','Arial Black',sans-serif" font-size="46" fill="#111">ТЕНДЕРНАЯ</text>
+        <text x="1540" y="106" text-anchor="end" font-family="'IBM Plex Mono',monospace" font-weight="500" font-size="28" fill="#111" letter-spacing="2">ТЗ → СМЕТА ЗА НОЧЬ</text>
+        <rect x="0" y="760" width="1600" height="140" fill="#111"/>
+        <text x="800" y="856" text-anchor="middle" font-family="Oswald,'Arial Narrow',sans-serif" font-weight="700" font-size="78" fill="#FFE600" letter-spacing="3">ВИДИМ КАЖДУЮ ПОЗИЦИЮ В ТЗ</text>
+      </svg>
+    </div>
+    <div class="apps" data-v="t5"></div>
+  </section>
+
+  <!-- ============ T6 ============ -->
+  <section class="v" id="t6" data-name="Печать 100%">
+    <div class="vh">
+      <span class="vnum">T6</span><h2>Печать «100%»</h2>
+      <div class="acts"><button class="ok" type="button">Утверждаю T6</button><button class="x" type="button" aria-label="Убрать T6 из сравнения">×</button></div>
+      <p class="concept">знак как печать «Подтверждаю на 100%», главная кнопка платформы стала логотипом · подход: штамп, жёлтый и розовый · другой текст: «Менеджер проверил. Мария видит итог.»</p>
+    </div>
+    <div class="poster">
+      <svg viewBox="0 0 1600 900" role="img" aria-label="Плакат: печать Подтверждаю на 100%">
+        <defs><path id="ring6" d="M520,450 m-262,0 a262,262 0 1,1 524,0 a262,262 0 1,1 -524,0"/></defs>
+        <rect width="1600" height="900" fill="#FFE600"/>
+        <g transform="rotate(-12 520 450)">
+          <circle cx="520" cy="450" r="320" fill="none" stroke="#FF2E93" stroke-width="26"/>
+          <circle cx="520" cy="450" r="214" fill="none" stroke="#FF2E93" stroke-width="8"/>
+          <text font-family="Unbounded,'Arial Black',sans-serif" font-weight="800" font-size="44" fill="#FF2E93"><textPath href="#ring6" textLength="1610" lengthAdjust="spacing">ПОДТВЕРЖДАЮ НА 100% · ТЕНДЕРНАЯ · </textPath></text>
+          <text x="520" y="500" text-anchor="middle" font-family="Unbounded,'Arial Black',sans-serif" font-weight="800" font-size="138" fill="#FF2E93">100%</text>
+        </g>
+        <text x="900" y="300" textLength="620" lengthAdjust="spacingAndGlyphs" font-family="Unbounded,'Arial Black',sans-serif" font-weight="800" font-size="96" fill="#111">Тендерная</text>
+        <text x="902" y="410" font-family="'Golos Text',Arial,sans-serif" font-weight="500" font-size="42" fill="#111">Менеджер проверил.</text>
+        <text x="902" y="466" font-family="'Golos Text',Arial,sans-serif" font-weight="500" font-size="42" fill="#111">Мария видит итог.</text>
+        <rect x="900" y="540" width="620" height="100" fill="#111"/>
+        <text x="1210" y="606" text-anchor="middle" font-family="Oswald,'Arial Narrow',sans-serif" font-weight="700" font-size="46" fill="#FFE600" letter-spacing="2">ПОДТВЕРЖДАЮ НА 100%</text>
+        <text x="902" y="840" font-family="'IBM Plex Mono',monospace" font-weight="500" font-size="24" fill="#111" letter-spacing="2">АРТАКТИВ · ПРОИНТЕРАКТИВ · АРЕНДА ПЛЮС</text>
+      </svg>
+    </div>
+    <div class="apps" data-v="t6"></div>
+  </section>
+
+  <!-- ============ T7 ============ -->
+  <section class="v" id="t7" data-name="Смета крупно">
+    <div class="vh">
+      <span class="vnum">T7</span><h2>Смета крупно</h2>
+      <div class="acts"><button class="ok" type="button">Утверждаю T7</button><button class="x" type="button" aria-label="Убрать T7 из сравнения">×</button></div>
+      <p class="concept">сама смета стала плакатом: разделы и итог гигантским шрифтом, знак «Т» из строк таблицы · подход: оранжевый и чёрный, цифры как герой</p>
+    </div>
+    <div class="poster">
+      <svg viewBox="0 0 1600 900" role="img" aria-label="Плакат: разделы сметы и итог">
+        <rect width="1600" height="900" fill="#FF6B00"/>
+        <use href="#m7" x="56" y="40" width="130" height="130" style="--a:#111;--b:#FFFFFF"/>
+        <text x="210" y="138" textLength="560" lengthAdjust="spacingAndGlyphs" font-family="Unbounded,'Arial Black',sans-serif" font-weight="800" font-size="66" fill="#111">ТЕНДЕРНАЯ</text>
+        <text x="1540" y="112" text-anchor="end" font-family="'IBM Plex Mono',monospace" font-weight="500" font-size="26" fill="#111" letter-spacing="2">СМЕТА · ЛОТ 0.1 · ВЕРСИЯ 2</text>
+        <g font-family="Unbounded,'Arial Black',sans-serif" font-weight="800" font-size="46" fill="#111">
+          <text x="60" y="300">ТЕХНИЧЕСКОЕ ОСНАЩЕНИЕ</text><text x="1540" y="300" text-anchor="end">158 900 ₽</text>
+          <text x="60" y="410">СВЕТ</text><text x="1540" y="410" text-anchor="end">35 200 ₽</text>
+          <text x="60" y="520">МЕБЕЛЬ</text><text x="1540" y="520" text-anchor="end">59 200 ₽</text>
+        </g>
+        <g fill="#111"><rect x="60" y="328" width="1480" height="4"/><rect x="60" y="438" width="1480" height="4"/><rect x="60" y="548" width="1480" height="4"/></g>
+        <rect x="0" y="620" width="1600" height="180" fill="#111"/>
+        <text x="60" y="736" font-family="Unbounded,'Arial Black',sans-serif" font-weight="800" font-size="60" fill="#FF6B00">ИТОГО</text>
+        <text x="1540" y="752" text-anchor="end" font-family="'Rubik Mono One','Arial Black',sans-serif" font-size="110" fill="#FF6B00">253 300 ₽</text>
+        <text x="60" y="860" font-family="'IBM Plex Mono',monospace" font-weight="500" font-size="24" fill="#111" letter-spacing="1">цены: средняя по сайтам трёх компаний, прайс 13.07.2026 · лот для примера</text>
+      </svg>
+    </div>
+    <div class="apps" data-v="t7"></div>
+  </section>
+
+  <!-- ============ T8 ============ -->
+  <section class="v" id="t8" data-name="Баухаус">
+    <div class="vh">
+      <span class="vnum">T8</span><h2>Баухаус</h2>
+      <div class="acts"><button class="ok" type="button">Утверждаю T8</button><button class="x" type="button" aria-label="Убрать T8 из сравнения">×</button></div>
+      <p class="concept">буква «Т» собрана из трёх фигур: планка, круг, треугольник · подход: геометрия Баухауса в поп-палитре · другой текст: «Собрали смету. Осталось подтвердить.»</p>
+    </div>
+    <div class="poster">
+      <svg viewBox="0 0 1600 900" role="img" aria-label="Плакат: буква Т из геометрических фигур">
+        <rect width="1600" height="900" fill="#00C2FF"/>
+        <rect x="80" y="80" width="700" height="190" fill="#FFE600"/>
+        <circle cx="430" cy="460" r="160" fill="#FF2E93"/>
+        <path d="M250 640 H610 L430 860 Z" fill="#111"/>
+        <g font-family="'Rubik Mono One','Arial Black',sans-serif" font-size="132" fill="#111">
+          <text x="880" y="270" textLength="660" lengthAdjust="spacingAndGlyphs">ТЕНДЕР</text>
+          <text x="880" y="430" textLength="330" lengthAdjust="spacingAndGlyphs">НАЯ</text>
+        </g>
+        <text x="882" y="570" font-family="'Golos Text',Arial,sans-serif" font-weight="700" font-size="46" fill="#111">Собрали смету.</text>
+        <text x="882" y="632" font-family="'Golos Text',Arial,sans-serif" font-weight="700" font-size="46" fill="#111">Осталось подтвердить.</text>
+        <text x="882" y="840" font-family="'IBM Plex Mono',monospace" font-weight="500" font-size="24" fill="#111" letter-spacing="2">44-ФЗ · 223-ФЗ · КОММЕРЧЕСКИЕ ТЕНДЕРЫ</text>
+      </svg>
+    </div>
+    <div class="apps" data-v="t8"></div>
+  </section>
+
+  <footer class="foot">Эскизы, 21 октября 2026. Знаки и экраны пример, лот и даты условные. Цены в смете: средняя по сайтам Артактив, Проинтерактив, Аренда Плюс по прайсу от 13.07.2026.</footer>
+</main>
+
+<div class="toast" id="toast" hidden></div>
+
+<script>
+(function(){
+  // ---------- сетка T3 ----------
+  var g = document.getElementById('grid15'), NS = 'http://www.w3.org/2000/svg';
+  var pal = ['#FF2E93','#00C2FF','#FFE600','#FF6B00'];
+  var prices = ['67 000 ₽','17 500 ₽','1 850 ₽','2 450 ₽','1 300 ₽','1 600 ₽','360 ₽','158 900 ₽','35 200 ₽','59 200 ₽','134 000 ₽','19 600 ₽','43 200 ₽','16 000 ₽'];
+  var k = 0, html = '';
+  for (var r = 0; r < 3; r++) for (var c = 0; c < 5; c++) {
+    var x = c * 320, y = r * 300;
+    if (r === 1 && c === 2) {
+      html += '<rect x="'+x+'" y="'+y+'" width="320" height="300" fill="#111"/>' +
+        '<text x="'+(x+20)+'" y="'+(y+130)+'" textLength="280" lengthAdjust="spacingAndGlyphs" font-family="\'Rubik Mono One\',\'Arial Black\',sans-serif" font-size="40" fill="#FFFFFF">ТЕНДЕРНАЯ</text>' +
+        '<text x="'+(x+20)+'" y="'+(y+196)+'" font-family="Unbounded,\'Arial Black\',sans-serif" font-weight="800" font-size="27" fill="#FFE600">Подтверждаешь?</text>';
+      continue;
+    }
+    var bg = pal[k % 4], fg = pal[(k + 1) % 4];
+    html += '<rect x="'+x+'" y="'+y+'" width="320" height="300" fill="'+bg+'"/>' +
+      '<use href="#m3" x="'+(x+70)+'" y="'+(y+22)+'" width="180" height="180" style="--a:#111;--b:'+bg+'"/>' +
+      '<text x="'+(x+160)+'" y="'+(y+262)+'" text-anchor="middle" font-family="\'IBM Plex Mono\',monospace" font-weight="500" font-size="30" fill="#111">'+prices[k]+'</text>';
+    k++;
+  }
+  g.innerHTML = html;
+
+  // ---------- применения ----------
+  var V = {
+    t1:{m:'m1', mv:'--a:#111;--b:#FF2E93', ic:'#FFE600', lk:'#111', lmv:'--a:#FFE600;--b:#111',
+        s:{bg:'#111',fg:'#FFFFFF',card:'#1E1E1E',cfg:'#FFFFFF',line:'#3A3A3A',ac:'#FF2E93',acink:'#111',hi:'#FFE600',hiink:'#111',fd:"'Rubik Mono One','Arial Black',sans-serif",fw:'400',tt:'uppercase',r:'0px',bd:'3px solid #FFE600',smv:'--a:#FFE600;--b:#111'}},
+    t2:{m:'m2', mv:'--a:#1E2BFF;--b:#E9FF1F;--c:#FFFFFF', ic:'#1E2BFF', lk:'#1E2BFF', lmv:'--a:#1E2BFF;--b:#E9FF1F;--c:#FFFFFF',
+        s:{bg:'#1E2BFF',fg:'#FFFFFF',card:'#FFFFFF',cfg:'#111',line:'#D5D8FF',ac:'#E9FF1F',acink:'#1E2BFF',hi:'#E9FF1F',hiink:'#1E2BFF',fd:"Geologica,'Helvetica Neue',sans-serif",fw:'900',tt:'none',r:'0px',bd:'0',smv:'--a:#E9FF1F;--b:#1E2BFF;--c:#FFFFFF'}},
+    t3:{m:'m3', mv:'--a:#111;--b:#FFE600', ic:'#FFE600', lk:'#FF2E93', lmv:'--a:#111;--b:#FF2E93',
+        s:{bg:'#FFFFFF',fg:'#111',card:'#F3F3F3',cfg:'#111',line:'#D6D6D6',ac:'#111',acink:'#FFE600',hi:'#FF2E93',hiink:'#111',fd:"Unbounded,'Arial Black',sans-serif",fw:'800',tt:'none',r:'14px',bd:'0',smv:'--a:#111;--b:#00C2FF'}},
+    t4:{m:'m4', mv:'--a:#FFD400;--b:#0A0F3D', ic:'#1F2BFF', lk:'#1F2BFF', lmv:'--a:#FFD400;--b:#0A0F3D',
+        s:{bg:'#FFFFFF',fg:'#0A0F3D',card:'#EEF0FF',cfg:'#0A0F3D',line:'#C9CCF5',ac:'#1F2BFF',acink:'#FFFFFF',hi:'#FFD400',hiink:'#0A0F3D',fd:"Oswald,'Arial Narrow',sans-serif",fw:'700',tt:'uppercase',r:'4px',bd:'0',smv:'--a:#FFD400;--b:#1F2BFF'}},
+    t5:{m:'m5', mv:'--a:#111;--b:#FFE600;--c:#FF2E93', ic:'#FF2E93', lk:'#FF2E93', lmv:'--a:#111;--b:#FFE600;--c:#FF2E93',
+        s:{bg:'#FF2E93',fg:'#111',card:'#FFFFFF',cfg:'#111',line:'#111',ac:'#111',acink:'#FFE600',hi:'#FFE600',hiink:'#111',fd:"Oswald,'Arial Narrow',sans-serif",fw:'700',tt:'uppercase',r:'0px',bd:'3px solid #111',smv:'--a:#111;--b:#FFE600;--c:#FF2E93'}},
+    t6:{m:'m6', mv:'--a:#FF2E93', ic:'#FFE600', lk:'#FFE600', lmv:'--a:#FF2E93',
+        s:{bg:'#FFE600',fg:'#111',card:'#FFFFFF',cfg:'#111',line:'#E2E2E2',ac:'#FF2E93',acink:'#111',hi:'#111',hiink:'#FFE600',fd:"Unbounded,'Arial Black',sans-serif",fw:'800',tt:'none',r:'18px',bd:'0',smv:'--a:#FF2E93'}},
+    t7:{m:'m7', mv:'--a:#111;--b:#FFFFFF', ic:'#FF6B00', lk:'#FF6B00', lmv:'--a:#111;--b:#FFFFFF',
+        s:{bg:'#FF6B00',fg:'#111',card:'#FFFFFF',cfg:'#111',line:'#111',ac:'#111',acink:'#FF6B00',hi:'#111',hiink:'#FFFFFF',fd:"Unbounded,'Arial Black',sans-serif",fw:'800',tt:'uppercase',r:'0px',bd:'3px solid #111',smv:'--a:#111;--b:#FFFFFF'}},
+    t8:{m:'m8', mv:'--a:#FFE600;--b:#FF2E93;--c:#111', ic:'#00C2FF', lk:'#00C2FF', lmv:'--a:#FFE600;--b:#FF2E93;--c:#111',
+        s:{bg:'#00C2FF',fg:'#111',card:'#FFFFFF',cfg:'#111',line:'#111',ac:'#111',acink:'#FFE600',hi:'#FFE600',hiink:'#111',fd:"'Rubik Mono One','Arial Black',sans-serif",fw:'400',tt:'uppercase',r:'0px',bd:'3px solid #111',smv:'--a:#FFE600;--b:#FF2E93;--c:#111'}}
+  };
+
+  // позиции: цены с сайтов трёх компаний, прайс 13.07.2026; средняя по сайтам, где позиция есть
+  var SEC = [
+    {t:'Техническое оснащение', rows:[
+      {n:'Проектор Barco HDX W18', q:2, p:67000, src:'Проинтерактив, Аренда Плюс', com:'Мария Лесных: в ТЗ п. 2.1 проекторов два, оставь 2.'},
+      {n:'Бензиновый генератор Huter DY9500L, 8 кВт', q:1, p:17500, src:'Артактив, Проинтерактив'},
+      {n:'Радиомикрофон Shure SM58', q:4, p:1850, src:'Артактив, Аренда Плюс'}]},
+    {t:'Свет', rows:[
+      {n:'Профильный прожектор ETC S4-36 Profile', q:8, p:2450, src:'Артактив, Аренда Плюс'},
+      {n:'Светодиодный прожектор', q:12, p:1300, src:'Аренда Плюс'}]},
+    {t:'Мебель', rows:[
+      {n:'Стол фуршетный из катушки', q:10, p:1600, src:'Артактив, Аренда Плюс'},
+      {n:'Стул Кьявари Black', q:120, p:360, src:'Артактив'}]}
+  ];
+  function rub(v){ return v.toLocaleString('ru-RU').replace(/ /g,' ') + ' ₽'; }
+  var total = 0, rowsHtml = '';
+  SEC.forEach(function(s){
+    var sub = s.rows.reduce(function(a,r){ return a + r.q*r.p; }, 0); total += sub;
+    rowsHtml += '<tr class="sec"><td colspan="3">'+s.t+'</td><td class="n">'+rub(sub)+'</td></tr>';
+    s.rows.forEach(function(r){
+      rowsHtml += '<tr><td>'+r.n+'<span class="src">средняя: '+r.src+'</span></td><td class="n">'+r.q+'</td><td class="n">'+rub(r.p)+'</td><td class="n">'+rub(r.q*r.p)+'</td></tr>';
+      if (r.com) rowsHtml += '<tr class="com"><td colspan="4"><span class="bub">'+r.com+'</span></td></tr>';
+    });
+  });
+
+  function screen(id, cfg){
+    var s = cfg.s;
+    var st = '--s-bg:'+s.bg+';--s-fg:'+s.fg+';--s-card:'+s.card+';--s-cfg:'+s.cfg+';--s-line:'+s.line+';--s-ac:'+s.ac+';--s-acink:'+s.acink+
+             ';--s-hi:'+s.hi+';--s-hiink:'+s.hiink+';--s-fd:'+s.fd+';--s-fw:'+s.fw+';--s-tt:'+s.tt+';--s-r:'+s.r+';--s-bd:'+s.bd;
+    return '<div class="scr" style="'+st+'">' +
+      '<div class="s-top"><svg class="s-mark" viewBox="0 0 200 200" aria-hidden="true"><use href="#'+cfg.m+'" style="'+s.smv+'"/></svg>' +
+        '<b class="s-word">Тендерная</b><span class="s-ver">версия 2 · ваша правка</span></div>' +
+      '<div><div class="s-lt">Лот 0.1 · Сцена, свет и мебель для городского праздника</div>' +
+        '<div class="s-dl">Подача до 23.10, 18:00 (за сутки до дедлайна из ТЗ)</div></div>' +
+      '<div class="s-who"><label>Компания<select aria-label="Компания"><option>Аренда Плюс</option><option>Артактив</option><option>Проинтерактив</option></select></label>' +
+        '<label>Имя<input type="text" placeholder="Как вас зовут" aria-label="Имя"></label></div>' +
+      '<div class="s-card"><table><thead><tr><th>Позиция</th><th class="n">Кол-во</th><th class="n">Цена</th><th class="n">Сумма</th></tr></thead><tbody>'+rowsHtml+'</tbody></table></div>' +
+      '<div class="s-hint"><b>Подсказка ИИ:</b> в ТЗ п. 3.2 нужен резервный генератор. Добавить строку?</div>' +
+      '<div class="s-foot"><span class="s-sum">Итого '+rub(total)+'</span><button class="s-btn" type="button">Подтверждаю на 100%</button></div>' +
+      '<p class="s-note">Цены: средняя по сайтам Артактив, Проинтерактив, Аренда Плюс (прайс 13.07.2026). Лот, даты и комментарий для примера.</p>' +
+    '</div>';
+  }
+
+  Object.keys(V).forEach(function(id){
+    var cfg = V[id], box = document.querySelector('.apps[data-v="'+id+'"]');
+    if (!box) return;
+    box.innerHTML =
+      '<div class="icon"><div class="cap">значок</div><svg viewBox="0 0 200 200" aria-hidden="true"><rect width="200" height="200" fill="'+cfg.ic+'"/>' +
+        '<use href="#'+cfg.m+'" x="30" y="30" width="140" height="140" style="'+cfg.mv+'"/></svg></div>' +
+      '<div><div class="cap">ссылка менеджеру</div><div class="lnk"><div class="im" style="background:'+cfg.lk+'"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#'+cfg.m+'" style="'+cfg.lmv+'"/></svg></div>' +
+        '<div class="tx"><b>Смета по лоту 0.1 · Тендерная</b><span>Проверьте позиции и нажмите «Подтверждаю на 100%» до 23.10</span></div></div></div>' +
+      '<div class="scr-wrap" style="min-width:0"><div class="cap">экран сметы по ссылке</div>' + screen(id, cfg) + '</div>';
+  });
+
+  // ---------- навигация, крестики, утверждение ----------
+  var KEY = 'tendernaya-v1-hidden';
+  var hidden = [];
+  try { hidden = JSON.parse(localStorage.getItem(KEY) || '[]'); } catch (e) {}
+  var nav = document.getElementById('nav'), restore = document.getElementById('restore'), toast = document.getElementById('toast');
+  var secs = Array.prototype.slice.call(document.querySelectorAll('section.v'));
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify(hidden)); } catch (e) {} }
+  function say(t){ toast.textContent = t; toast.hidden = false; clearTimeout(say.t); say.t = setTimeout(function(){ toast.hidden = true; }, 2400); }
+  function render(){
+    nav.innerHTML = ''; restore.innerHTML = '';
+    secs.forEach(function(s){
+      var id = s.id, off = hidden.indexOf(id) >= 0;
+      s.hidden = off;
+      var a = document.createElement('a'); a.href = '#' + id; a.textContent = id.toUpperCase(); a.hidden = off; nav.appendChild(a);
+      if (off) { var b = document.createElement('button'); b.type = 'button'; b.textContent = '↺ ' + id.toUpperCase();
+        b.onclick = function(){ hidden = hidden.filter(function(h){ return h !== id; }); save(); render(); }; restore.appendChild(b); }
+    });
+  }
+  secs.forEach(function(s){
+    s.querySelector('.x').onclick = function(){ hidden.push(s.id); save(); render(); };
+    s.querySelector('.ok').onclick = function(){
+      var t = 'Утверждаю ' + s.id.toUpperCase() + ': логотип и стиль «Тендерной» (' + s.dataset.name + ')';
+      if (navigator.clipboard) navigator.clipboard.writeText(t).then(function(){ say('Скопировано: ' + t); }, function(){ say(t); });
+      else say(t);
+    };
+  });
+  render();
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting) {
+      Array.prototype.forEach.call(nav.children, function(a){ a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id); });
+    }});
+  }, {rootMargin:'-40% 0px -55% 0px'});
+  secs.forEach(function(s){ io.observe(s); });
+})();
+</script>
+
+</body>
+</html>
