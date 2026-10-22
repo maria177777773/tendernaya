@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <title>Тендер-Печь · презентация</title>
-<meta name="description" content="Тендер-Печь: смета по тендерному заданию за 15 минут, а не за несколько дней. Разработка тендерного отдела, которая позволяет быстро считать тендерные предложения и больше зарабатывать. Мария Лесных.">
+<meta name="description" content="Тендер-Печь: смета по тендерному заданию за 15 минут, а не за несколько дней. Разработка тендерного отдела, чтобы быстро считать тендерные предложения и больше зарабатывать. Автор проекта: Мария Лесных.">
 <meta property="og:title" content="Тендер-Печь">
 <meta property="og:description" content="Смета по тендерному заданию за 15 минут, а не за несколько дней">
 <meta property="og:type" content="website">
@@ -229,7 +229,7 @@ button{font:inherit}
 .dots a{height:var(--btn-h);padding:0 20px;display:inline-flex;align-items:center;border-radius:999px;background:var(--white);color:var(--blue);text-decoration:none;font-weight:600;font-size:var(--fs-s);border:2px solid var(--blue)}
 .dots a.on{background:var(--blue);color:var(--white)}
 .slide{padding-block:110px 0;scroll-margin-top:84px}
-.kicker{font-weight:600;font-size:var(--fs-s);letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+.kicker{font-weight:700;font-size:var(--fs-s);letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:14px}
 .slide h2{font-size:var(--fs-xxl);margin-bottom:22px}
 .slide h2.stmt{font-size:var(--fs-big);max-width:20ch;margin-bottom:40px}
 .lead{font-size:var(--fs-l);max-width:64ch;color:var(--muted)}
@@ -239,7 +239,7 @@ button{font:inherit}
 .card{background:var(--white);border-radius:var(--r);padding:28px;border:2px solid var(--line);display:flex;flex-direction:column;gap:10px}
 .card .ico{width:64px;height:64px;margin-bottom:8px}
 .card .step{font-weight:600;font-size:var(--fs-s);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.card h3{font-size:var(--fs-l)}
+.card h3{font-size:var(--fs-l);color:var(--blue)}
 .card p{color:var(--muted)}
 .vs{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:20px;align-items:stretch}
 .vs .t{border-radius:var(--r);padding:32px;display:flex;flex-direction:column;justify-content:center;gap:8px}
@@ -252,7 +252,9 @@ button{font:inherit}
 .vs .now .big{color:var(--yel)}
 .vs .arr{display:flex;align-items:center;justify-content:center}
 .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
-.chip{display:inline-flex;align-items:center;min-height:40px;padding:6px 16px;border-radius:999px;background:var(--white);border:2px solid var(--line);font-size:var(--fs-s);font-weight:500}
+.chip{display:inline-flex;align-items:center;min-height:40px;padding:6px 16px;border-radius:999px;font-size:var(--fs-s);font-weight:600}
+/* насыщенные плашки из палитры печи (не пастель), контраст текста не ниже 4.5:1 */
+.chip.c-blue{background:var(--blue);color:#fff} .chip.c-red{background:var(--red);color:#fff} .chip.c-yel{background:var(--yel);color:var(--ink)} .chip.c-fire{background:var(--fire);color:var(--ink)}
 .note{display:flex;gap:16px;align-items:center;margin-top:24px;background:var(--yel-soft);border-radius:16px;padding:18px 22px;font-size:var(--fs-m)}
 .note .ico{width:44px;height:44px}
 .tbl-box{margin-top:24px;border-radius:var(--r);background:var(--white);border:2px solid var(--line);overflow:hidden}
@@ -276,9 +278,9 @@ button{font:inherit}
 .foot{padding-block:130px 32px}
 .foot-band{border-radius:var(--r);background:var(--blue);color:var(--white);overflow:hidden}
 .foot-in{padding:40px 48px 36px}
-.foot-top{display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;font-weight:600;font-size:var(--fs-s);letter-spacing:.14em;text-transform:uppercase}
+.foot-top{display:flex;justify-content:center;text-align:center;gap:12px 24px;flex-wrap:wrap;font-weight:600;font-size:var(--fs-s);letter-spacing:.14em;text-transform:uppercase}
 .foot-logo{display:block;width:100%;height:auto;margin:30px 0 22px}
-.foot-sub{text-align:center;font-family:var(--f-head);font-size:var(--fs-l);color:var(--yel)}
+.foot-sub{text-align:center;font-family:var(--f-head);font-size:var(--fs-xl);color:var(--yel)}
 .foot-strip{display:block;width:100%;height:96px}
 
 /* ───────── мини-платформа: папка тендера в светлом виде V9 ───────── */
@@ -424,7 +426,7 @@ button{font:inherit}
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><symbol id="i-tz" viewBox="0 0 48 48"><rect width="48" height="48" rx="13" fill="#1D3FBB"/><rect x="4" y="4" width="40" height="40" rx="10" fill="none" stroke="#fff" stroke-opacity=".32" stroke-width="1.5"/><path fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" d="M11 11h12l7 7v19H11z M23 11v7h7 M20.5 32V22 M16.5 26l4-4 4 4"/><g transform="translate(30 26) scale(1.05)"><path d="M6 16C1.6 13.2 3 8.4 6 2.5C7.6 6.9 11.6 8.9 10.2 13.1C9.6 14.9 7.9 16.2 6 16Z" fill="#F2B705"/><path d="M6.1 15.2C4.3 13.6 5 11.6 6.1 9.4C6.9 11.4 8.6 12.3 7.9 14C7.6 14.8 6.9 15.3 6.1 15.2Z" fill="#FF6B00"/></g></symbol><symbol id="i-ai" viewBox="0 0 48 48"><rect width="48" height="48" rx="13" fill="#C8102E"/><rect x="4" y="4" width="40" height="40" rx="10" fill="none" stroke="#fff" stroke-opacity=".32" stroke-width="1.5"/><g transform="translate(9 9) scale(2.0)"><path d="M6 16C1.6 13.2 3 8.4 6 2.5C7.6 6.9 11.6 8.9 10.2 13.1C9.6 14.9 7.9 16.2 6 16Z" fill="#F2B705"/><path d="M6.1 15.2C4.3 13.6 5 11.6 6.1 9.4C6.9 11.4 8.6 12.3 7.9 14C7.6 14.8 6.9 15.3 6.1 15.2Z" fill="#FF6B00"/></g><path d="M36 7l1.7 4.3L42 13l-4.3 1.7L36 19l-1.7-4.3L30 13l4.3-1.7z" fill="#fff"/></symbol><symbol id="i-flame" viewBox="0 0 48 48"><rect width="48" height="48" rx="13" fill="#C8102E"/><rect x="4" y="4" width="40" height="40" rx="10" fill="none" stroke="#fff" stroke-opacity=".32" stroke-width="1.5"/><g transform="translate(12 7.5) scale(2.0)"><path d="M6 16C1.6 13.2 3 8.4 6 2.5C7.6 6.9 11.6 8.9 10.2 13.1C9.6 14.9 7.9 16.2 6 16Z" fill="#F2B705"/><path d="M6.1 15.2C4.3 13.6 5 11.6 6.1 9.4C6.9 11.4 8.6 12.3 7.9 14C7.6 14.8 6.9 15.3 6.1 15.2Z" fill="#FF6B00"/></g></symbol><symbol id="i-edit" viewBox="0 0 48 48"><rect width="48" height="48" rx="13" fill="#FF6B00"/><rect x="4" y="4" width="40" height="40" rx="10" fill="none" stroke="#fff" stroke-opacity=".32" stroke-width="1.5"/><path fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" d="M11 36l2.2-7.4L28 13.8l5.2 5.2-14.8 14.8z M25 16.8l5.2 5.2"/><g transform="translate(31 26) scale(1.05)"><path d="M6 16C1.6 13.2 3 8.4 6 2.5C7.6 6.9 11.6 8.9 10.2 13.1C9.6 14.9 7.9 16.2 6 16Z" fill="#fff"/><path d="M6.1 15.2C4.3 13.6 5 11.6 6.1 9.4C6.9 11.4 8.6 12.3 7.9 14C7.6 14.8 6.9 15.3 6.1 15.2Z" fill="#F2B705"/></g></symbol><symbol id="i-ok" viewBox="0 0 48 48"><rect width="48" height="48" rx="13" fill="#0F1B4C"/><rect x="4" y="4" width="40" height="40" rx="10" fill="none" stroke="#fff" stroke-opacity=".32" stroke-width="1.5"/><path fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" d="M11 24.5l7 7 14-15"/><g transform="translate(31 26) scale(1.05)"><path d="M6 16C1.6 13.2 3 8.4 6 2.5C7.6 6.9 11.6 8.9 10.2 13.1C9.6 14.9 7.9 16.2 6 16Z" fill="#F2B705"/><path d="M6.1 15.2C4.3 13.6 5 11.6 6.1 9.4C6.9 11.4 8.6 12.3 7.9 14C7.6 14.8 6.9 15.3 6.1 15.2Z" fill="#FF6B00"/></g></symbol><symbol id="i-arrow" viewBox="0 0 48 48"><rect width="48" height="48" rx="13" fill="#FF6B00"/><rect x="4" y="4" width="40" height="40" rx="10" fill="none" stroke="#fff" stroke-opacity=".32" stroke-width="1.5"/><path fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" d="M11 24h24 M27 16l8 8-8 8"/></symbol><symbol id="i-clock" viewBox="0 0 48 48"><rect width="48" height="48" rx="13" fill="#4A5580"/><rect x="4" y="4" width="40" height="40" rx="10" fill="none" stroke="#fff" stroke-opacity=".32" stroke-width="1.5"/><circle cx="24" cy="24" r="12.5" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" d="M24 17v7l5 3.5"/></symbol><symbol id="i-hint" viewBox="0 0 48 48"><rect width="48" height="48" rx="13" fill="#1D3FBB"/><rect x="4" y="4" width="40" height="40" rx="10" fill="none" stroke="#fff" stroke-opacity=".32" stroke-width="1.5"/><path fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" d="M18.5 31.5c-3.3-2.4-5.5-5.6-5.5-9.5a11 11 0 0 1 22 0c0 3.9-2.2 7.1-5.5 9.5v4h-11z M19 40h10"/><g transform="translate(18 15) scale(1.0)"><path d="M6 16C1.6 13.2 3 8.4 6 2.5C7.6 6.9 11.6 8.9 10.2 13.1C9.6 14.9 7.9 16.2 6 16Z" fill="#F2B705"/><path d="M6.1 15.2C4.3 13.6 5 11.6 6.1 9.4C6.9 11.4 8.6 12.3 7.9 14C7.6 14.8 6.9 15.3 6.1 15.2Z" fill="#FF6B00"/></g></symbol><symbol id="i-note" viewBox="0 0 48 48"><rect width="48" height="48" rx="13" fill="#FF6B00"/><rect x="4" y="4" width="40" height="40" rx="10" fill="none" stroke="#fff" stroke-opacity=".32" stroke-width="1.5"/><path fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" d="M24 12v15"/><circle cx="24" cy="34.5" r="2.6" fill="#fff"/></symbol></defs></svg>
 <div class="wrap">
-  <header class="hero"><h1>Тендер-Печь: смета по тендерному заданию за 15 минут, а не за несколько дней</h1><svg data-art="плакат" class="hero-svg desk" viewBox="0 0 1600 900" role="img" aria-label="Тендер-Печь. Смета по тендерному заданию за 15 минут, а не за несколько дней. Разработка тендерного отдела, которая позволяет быстро считать тендерные предложения и больше зарабатывать. Мария Лесных">
+  <header class="hero"><h1>Тендер-Печь: смета по тендерному заданию за 15 минут, а не за несколько дней</h1><svg data-art="плакат" class="hero-svg desk" viewBox="0 0 1600 900" role="img" aria-label="Тендер-Печь. Смета по тендерному заданию за 15 минут, а не за несколько дней. Готовим сметы как горячие пирожки. Автор проекта: Мария Лесных">
 <defs><pattern id="p10d" width="110" height="110" patternUnits="userSpaceOnUse">
 <rect width="110" height="110" fill="#FFFFFF"/><rect x="4" y="4" width="102" height="102" fill="none" stroke="#1D3FBB" stroke-width="6"/>
 <ellipse cx="55" cy="33" rx="9" ry="16" fill="#1D3FBB"/><ellipse cx="55" cy="77" rx="9" ry="16" fill="#1D3FBB"/>
@@ -442,22 +444,22 @@ button{font:inherit}
 <text class="ht" x="880" y="212" textLength="660" lengthAdjust="spacingAndGlyphs" font-family="'Ruslan Display','Times New Roman',serif" font-size="112" fill="#FFFFFF">ТЕНДЕР-ПЕЧЬ</text>
 <text class="ht" x="882" y="312" font-family="Podkova,Georgia,serif" font-weight="700" font-size="58" fill="#F2B705">Смета по тендерному</text><text class="ht" x="882" y="382" font-family="Podkova,Georgia,serif" font-weight="700" font-size="58" fill="#F2B705">заданию за 15 минут,</text><text class="ht" x="882" y="452" font-family="Podkova,Georgia,serif" font-weight="700" font-size="58" fill="#F2B705">а не за несколько дней</text>
 <rect x="882" y="500" width="640" height="6" fill="#D9DEEA"/>
-<text class="ht" x="882" y="566" font-family="'Golos Text',Arial,sans-serif" font-weight="500" font-size="32" fill="#FFFFFF">Разработка тендерного отдела,</text><text class="ht" x="882" y="610" font-family="'Golos Text',Arial,sans-serif" font-weight="500" font-size="32" fill="#FFFFFF">которая позволяет быстро считать</text><text class="ht" x="882" y="654" font-family="'Golos Text',Arial,sans-serif" font-weight="500" font-size="32" fill="#FFFFFF">тендерные предложения</text><text class="ht" x="882" y="698" font-family="'Golos Text',Arial,sans-serif" font-weight="500" font-size="32" fill="#FFFFFF">и больше зарабатывать</text>
-<text class="ht" x="882" y="790" font-family="'Golos Text',Arial,sans-serif" font-weight="600" font-size="28" fill="#F2B705">Мария Лесных</text>
-</svg><svg data-art="плакат" class="hero-svg mob" viewBox="0 0 800 1150" role="img" aria-label="Тендер-Печь. Смета по тендерному заданию за 15 минут, а не за несколько дней. Разработка тендерного отдела, которая позволяет быстро считать тендерные предложения и больше зарабатывать. Мария Лесных">
+<text class="ht" x="882" y="578" font-family="'Golos Text',Arial,sans-serif" font-weight="600" font-size="46" fill="#FFFFFF">Готовим сметы</text><text class="ht" x="882" y="636" font-family="'Golos Text',Arial,sans-serif" font-weight="600" font-size="46" fill="#FFFFFF">как горячие пирожки</text>
+<text class="ht" x="882" y="806" font-family="'Golos Text',Arial,sans-serif" font-weight="500" font-size="28" fill="#FFFFFF">Автор проекта: Мария Лесных</text>
+</svg><svg data-art="плакат" class="hero-svg mob" viewBox="0 0 800 1070" role="img" aria-label="Тендер-Печь. Смета по тендерному заданию за 15 минут, а не за несколько дней. Готовим сметы как горячие пирожки. Автор проекта: Мария Лесных">
 <defs><pattern id="p10m" width="110" height="110" patternUnits="userSpaceOnUse">
 <rect width="110" height="110" fill="#FFFFFF"/><rect x="4" y="4" width="102" height="102" fill="none" stroke="#1D3FBB" stroke-width="6"/>
 <ellipse cx="55" cy="33" rx="9" ry="16" fill="#1D3FBB"/><ellipse cx="55" cy="77" rx="9" ry="16" fill="#1D3FBB"/>
 <ellipse cx="33" cy="55" rx="16" ry="9" fill="#1D3FBB"/><ellipse cx="77" cy="55" rx="16" ry="9" fill="#1D3FBB"/>
 <circle cx="55" cy="55" r="9" fill="#C8102E"/>
 <circle cx="16" cy="16" r="5" fill="#C8102E"/><circle cx="94" cy="16" r="5" fill="#C8102E"/><circle cx="16" cy="94" r="5" fill="#C8102E"/><circle cx="94" cy="94" r="5" fill="#C8102E"/>
-</pattern></defs><rect width="800" height="1150" fill="#1D3FBB"/>
+</pattern></defs><rect width="800" height="1070" fill="#1D3FBB"/>
 <text class="ht" x="400" y="130" text-anchor="middle" textLength="660" lengthAdjust="spacingAndGlyphs" font-family="'Ruslan Display','Times New Roman',serif" font-size="112" fill="#FFFFFF">ТЕНДЕР-ПЕЧЬ</text>
 <text class="ht" x="400" y="222" text-anchor="middle" font-family="Podkova,Georgia,serif" font-weight="700" font-size="52" fill="#F2B705">Смета по тендерному</text><text class="ht" x="400" y="286" text-anchor="middle" font-family="Podkova,Georgia,serif" font-weight="700" font-size="52" fill="#F2B705">заданию за 15 минут,</text><text class="ht" x="400" y="350" text-anchor="middle" font-family="Podkova,Georgia,serif" font-weight="700" font-size="52" fill="#F2B705">а не за несколько дней</text>
 <rect x="110" y="384" width="580" height="5" fill="#D9DEEA"/>
-<text class="ht" x="400" y="440" text-anchor="middle" font-family="'Golos Text',Arial,sans-serif" font-weight="500" font-size="30" fill="#FFFFFF">Разработка тендерного отдела, которая</text><text class="ht" x="400" y="482" text-anchor="middle" font-family="'Golos Text',Arial,sans-serif" font-weight="500" font-size="30" fill="#FFFFFF">позволяет быстро считать тендерные</text><text class="ht" x="400" y="524" text-anchor="middle" font-family="'Golos Text',Arial,sans-serif" font-weight="500" font-size="30" fill="#FFFFFF">предложения и больше зарабатывать</text>
-<text class="ht" x="400" y="586" text-anchor="middle" font-family="'Golos Text',Arial,sans-serif" font-weight="600" font-size="28" fill="#F2B705">Мария Лесных</text>
-<g transform="translate(400 616) scale(.6) translate(-450 -40)">
+<text class="ht" x="400" y="444" text-anchor="middle" font-family="'Golos Text',Arial,sans-serif" font-weight="600" font-size="34" fill="#FFFFFF">Готовим сметы как горячие пирожки</text>
+<text class="ht" x="400" y="500" text-anchor="middle" font-family="'Golos Text',Arial,sans-serif" font-weight="500" font-size="28" fill="#FFFFFF">Автор проекта: Мария Лесных</text>
+<g transform="translate(400 540) scale(.6) translate(-450 -40)">
 <rect x="540" y="40" width="130" height="140" fill="url(#p10m)"/>
 <rect x="110" y="200" width="680" height="700" fill="url(#p10m)"/>
 <rect x="80" y="150" width="740" height="64" fill="#C8102E"/>
@@ -467,10 +469,10 @@ button{font:inherit}
 <path d="M452 884 C400 830 425 790 452 742 C468 790 506 812 486 860 C478 878 466 886 452 884 Z" fill="#F2B705"/>
 </g>
 </svg></header>
-  <nav class="dots" id="dots" aria-label="Разделы"><a href="#vremya">Что меняется</a><a href="#reshenie">Как работает</a><a href="#primer">Пример</a><a href="#platforma">Платформа</a></nav>
+  <nav class="dots" id="dots" aria-label="Разделы"><a href="#vremya">Сейчас</a><a href="#reshenie">Как работает</a><a href="#primer">Пример</a><a href="#platforma">Платформа</a></nav>
 
   <section class="slide" id="vremya">
-    <p class="kicker">Что меняется</p>
+    <p class="kicker">Сейчас</p>
     <h2 class="stmt">Тендерный отдел ждёт смету от менеджеров от 1 до 5 дней</h2>
     <div class="vs">
       <div class="t was"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg><p class="lb">Сейчас</p><p class="big">от 1 до 5 дней</p><p>ожидание сметы от менеджеров</p></div>
@@ -482,20 +484,20 @@ button{font:inherit}
   <section class="slide" id="reshenie">
     <p class="kicker">Как это работает</p>
     <h2>От ТЗ до согласованной сметы за четыре шага</h2>
-    <p class="lead">Менеджеры больше не перепечатывают ТЗ в таблицу. Все версии сметы в одном окне, ничего не теряется в переписке.</p>
+    <p class="lead">Все версии сметы в одном окне, ничего не теряется в переписке.</p>
     <div class="cards c4">
-      <div class="card"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-tz"/></svg><p class="step">Шаг 1</p><h3>Мария загружает ТЗ</h3><p>Один файл и одна кнопка. Дальше работает платформа.</p></div>
-      <div class="card"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-ai"/></svg><p class="step">Шаг 2</p><h3>ИИ за минуту собирает смету</h3><p>Позиции из ТЗ уже разложены по разделам, найденные цены стоят на месте.</p></div>
-      <div class="card"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-edit"/></svg><p class="step">Шаг 3</p><h3>Менеджеры правят свою копию</h3><p>У каждого своя ссылка. Менеджер дописывает недостающие цены и отправляет смету на согласование.</p></div>
-      <div class="card"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-ok"/></svg><p class="step">Шаг 4</p><h3>Мария согласует</h3><p>Видно, кто что прислал и что поменял. Вернуть на доработку или согласовать можно одной кнопкой.</p></div>
+      <div class="card"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-tz"/></svg><p class="step">Шаг 1</p><h3>Загружаем ТЗ</h3><p>Через удобный интерфейс загружаем техническое задание на сотни страниц.</p></div>
+      <div class="card"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-ai"/></svg><p class="step">Шаг 2</p><h3>Тендер-Печь собирает смету</h3><p>Собираем предварительную смету, в которой позиции заполнены на 20%, 50% или 70%.</p></div>
+      <div class="card"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-edit"/></svg><p class="step">Шаг 3</p><h3>Менеджер вносит недостающие цифры</h3><p>Вместо того чтобы составлять смету с нуля, менеджер лишь корректирует смету, которую ему прислали.</p></div>
+      <div class="card"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-ok"/></svg><p class="step">Шаг 4</p><h3>Согласование</h3><p>Тендерный отдел видит заполненную смету от менеджера и согласовывает или отправляет на доработку.</p></div>
     </div>
   </section>
 
   <section class="slide" id="primer">
     <p class="kicker">Пример</p>
-    <h2>Готовый черновик по реальному ТЗ «Дивеево»</h2>
+    <h2>Смета по реальному ТЗ «Дивеево»</h2>
     <p class="lead">Аренда тентовых конструкций и мебели с электроподключением для мероприятий ко Дню памяти Преподобного Серафима Саровского в с. Дивеево.</p>
-    <div class="meta"><span class="chip">44-ФЗ</span><span class="chip">с. Дивеево, Нижегородская область</span><span class="chip">мероприятие 28.07.2026-04.08.2026</span><span class="chip">аренда 8 дней</span></div>
+    <div class="meta"><span class="chip c-blue">44-ФЗ</span><span class="chip c-red">с. Дивеево, Нижегородская область</span><span class="chip c-yel">мероприятие 28.07.2026-04.08.2026</span><span class="chip c-fire">аренда 8 дней</span></div>
     <div class="note"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-note"/></svg><p><b>Черновик готов сразу.</b> Менеджеру остаётся вписать только пустые цены: здесь 22 строки из 28.</p></div>
     <div class="tbl-box"><table class="ex">
       <colgroup><col><col class="c-q"><col class="c-p"><col class="c-s"></colgroup>
@@ -503,17 +505,16 @@ button{font:inherit}
       <tbody><tr class="sec"><td colspan="3">Шатер 15х30 м (450 м²)<small>ещё 5 в разделе</small></td><td class="num">3 548 000 ₽</td></tr><tr><td class="nm">Шатер тентовый 15х30</td><td class="num" data-l="Кол-во">1 компл</td><td class="num" data-l="Цена за день">217 000 ₽</td><td class="num" data-l="Сумма за 8 дней">1 736 000 ₽</td></tr><tr><td class="nm">Стена ПВХ для шатра 5х3 м</td><td class="num" data-l="Кол-во">14 шт</td><td class="num" data-l="Цена за день"><span class="empty">впишет менеджер</span></td><td class="num" data-l="Сумма за 8 дней"><span class="dim">0 ₽</span></td></tr><tr><td class="nm">Пол щитовой деревянный на металлическом каркасе</td><td class="num" data-l="Кол-во">450 м²</td><td class="num" data-l="Цена за день"><span class="empty">впишет менеджер</span></td><td class="num" data-l="Сумма за 8 дней"><span class="dim">0 ₽</span></td></tr><tr><td class="nm">Светодиодный прожектор</td><td class="num" data-l="Кол-во">15 шт</td><td class="num" data-l="Цена за день">3 100 ₽</td><td class="num" data-l="Сумма за 8 дней">372 000 ₽</td></tr><tr><td class="nm">Стул белый пластик и сталь</td><td class="num" data-l="Кол-во">450 шт</td><td class="num" data-l="Цена за день">400 ₽</td><td class="num" data-l="Сумма за 8 дней">1 440 000 ₽</td></tr><tr class="sec"><td colspan="3">Шатер 10х15 м (150 м²)<small>ещё 8 в разделе</small></td><td class="num">680 000 ₽</td></tr><tr><td class="nm">Шатер тентовый 10х15</td><td class="num" data-l="Кол-во">1 компл</td><td class="num" data-l="Цена за день">65 000 ₽</td><td class="num" data-l="Сумма за 8 дней">520 000 ₽</td></tr><tr><td class="nm">Стул белый пластик и сталь</td><td class="num" data-l="Кол-во">50 шт</td><td class="num" data-l="Цена за день">400 ₽</td><td class="num" data-l="Сумма за 8 дней">160 000 ₽</td></tr><tr class="sec"><td colspan="3">Персонал<small>все строки раздела</small></td><td class="num">7 200 ₽</td></tr><tr><td class="nm">Техник по монтажу и обслуживанию электрооборудования</td><td class="num" data-l="Кол-во">1 чел</td><td class="num" data-l="Цена за день"><span class="empty">впишет менеджер</span></td><td class="num" data-l="Сумма за 8 дней"><span class="dim">0 ₽</span></td></tr><tr><td class="nm">Монтажники шатров</td><td class="num" data-l="Кол-во">1 чел</td><td class="num" data-l="Цена за день">900 ₽</td><td class="num" data-l="Сумма за 8 дней">7 200 ₽</td></tr><tr class="sec"><td colspan="3">Услуги<small>ещё 3 в разделе</small></td><td class="num">0 ₽</td></tr><tr><td class="nm">Монтаж</td><td class="num" data-l="Кол-во">1 усл</td><td class="num" data-l="Цена за день"><span class="empty">впишет менеджер</span></td><td class="num" data-l="Сумма за 8 дней"><span class="dim">0 ₽</span></td></tr><tr class="sec"><td colspan="3">Логистика<small>ещё 1 в разделе</small></td><td class="num">0 ₽</td></tr><tr><td class="nm">Фура 20 т</td><td class="num" data-l="Кол-во">1 шт</td><td class="num" data-l="Цена за день"><span class="empty">впишет менеджер</span></td><td class="num" data-l="Сумма за 8 дней"><span class="dim">0 ₽</span></td></tr><tr class="tot"><td colspan="3">Итого по смете ИИ</td><td class="num">4 235 200 ₽</td></tr></tbody>
     </table></div>
     <p class="src">Показано 11 строк из 28. Суммы разделов и итог по всей смете, как в платформе.</p>
-    <h3 class="hints-h">ИИ сам подсказывает, что проверить</h3>
+    <h3 class="hints-h">Тендер-Печь подсказывает, что поправить</h3>
     <div class="hints">
-      <div class="hint"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-hint"/></svg><div><p class="lb">Подсказка ИИ</p><p>ИИ насчитал 8 дней аренды. Проверьте: это дни работы оборудования или мероприятия, а не срок договора.</p></div></div>
-      <div class="hint"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-hint"/></svg><div><p class="lb">Подсказка ИИ</p><p>Нет цены на сайтах для «Монтаж». В похожей смете 197859: «Монтаж» 91 800 ₽ за шт. Единица другая: в смете усл, пересчитайте.</p></div></div>
+      <div class="hint"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-hint"/></svg><div><p class="lb">Подсказка</p><p>ИИ насчитал 8 дней аренды. Проверьте: это дни работы оборудования или мероприятия, а не срок договора.</p></div></div>
+      <div class="hint"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-hint"/></svg><div><p class="lb">Подсказка</p><p>Нет цены на сайтах для «Монтаж». В похожей смете 197859: «Монтаж» 91 800 ₽ за шт. Единица другая: в смете усл, пересчитайте.</p></div></div>
     </div>
   </section>
 
   <section class="slide" id="platforma">
-    <p class="kicker">Платформа</p>
-    <h2>Так это выглядит в платформе</h2>
-    <p class="lead">Папка тендера глазами Марии. Попробуйте сами: переключите версии менеджеров, поменяйте цену, раскройте раздел, оставьте комментарий, согласуйте смету.</p>
+    <h2>Так это выглядит на платформе</h2>
+    <p class="lead">Попробуйте сами: поменяйте цену, раскройте раздел, оставьте комментарий, согласуйте или верните на доработку.</p>
     <div class="pf" id="pf">
       <div class="pf-top">
         <span class="pf-brand"><svg viewBox="0 0 200 200" aria-hidden="true"><rect x="118" y="14" width="30" height="36" fill="#FFFFFF"/><rect x="40" y="62" width="120" height="122" fill="#FFFFFF"/><rect x="28" y="44" width="144" height="24" fill="#C8102E"/><path d="M68 184 V132 A32 32 0 0 1 132 132 V184 Z" fill="#111111"/><path d="M100 180 C80 162 90 146 100 132 C105 148 122 154 114 172 C111 179 105 181 100 180 Z" fill="#FF6B00"/></svg><b>Тендер-Печь</b></span>
@@ -554,9 +555,9 @@ button{font:inherit}
   <footer class="foot">
     <div class="foot-band">
       <div class="foot-in">
-        <p class="foot-top"><span>Платформа смет по тендерным ТЗ</span><span>Разработка тендерного отдела</span></p>
+        <p class="foot-top"><span>Смета за 15 минут, а не за несколько дней</span></p>
         <svg data-art="логотип" class="foot-logo" viewBox="0 0 1000 200" role="img" aria-label="Тендер-Печь"><g transform="translate(0 4) scale(.96)"><rect x="118" y="14" width="30" height="36" fill="#FFFFFF"/><rect x="40" y="62" width="120" height="122" fill="#FFFFFF"/><rect x="28" y="44" width="144" height="24" fill="#C8102E"/><path d="M68 184 V132 A32 32 0 0 1 132 132 V184 Z" fill="#111111"/><path d="M100 180 C80 162 90 146 100 132 C105 148 122 154 114 172 C111 179 105 181 100 180 Z" fill="#FF6B00"/></g><text x="225" y="150" textLength="770" lengthAdjust="spacingAndGlyphs" font-family="'Ruslan Display','Times New Roman',serif" font-size="150" fill="#FFFFFF">ТЕНДЕР-ПЕЧЬ</text></svg>
-        <p class="foot-sub">Смета за 15 минут, а не за несколько дней</p>
+        <p class="foot-sub">Готовим сметы как горячие пирожки</p>
       </div>
       <svg data-art="узор" class="foot-strip" viewBox="0 0 1650 110" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><pattern id="p10f" width="110" height="110" patternUnits="userSpaceOnUse">
 <rect width="110" height="110" fill="#FFFFFF"/><rect x="4" y="4" width="102" height="102" fill="none" stroke="#1D3FBB" stroke-width="6"/>
