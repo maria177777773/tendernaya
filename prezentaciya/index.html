@@ -605,7 +605,7 @@ button{font:inherit}
     var h='<tr class="'+cls+'" data-k="'+r.k+'"><td class="rn">'+i+'</td>'+
       '<td class="nm">'+esc(r.n)+'</td>'+
       '<td class="n" data-l="Кол-во">'+fmt(r.q)+' '+esc(r.u)+'</td>'+
-      '<td class="cp'+(p!==aiPrice(r)?' chg':'')+'" data-l="Цена за день, ₽"><input class="pf-in" inputmode="numeric" autocomplete="off" aria-label="Цена: '+esc(r.n)+'" value="'+(p?fmt(p):'')+'" placeholder="впишите"></td>'+
+      '<td class="cp'+(p!==aiPrice(r)?' chg':'')+'" data-l="Цена за день, ₽"><input class="pf-in" inputmode="numeric" autocomplete="off" aria-label="Цена: '+esc(r.n)+'" value="'+(p?fmt(p):'')+'"></td>'+
       '<td class="n cs'+(s?'':' z')+'" data-l="Сумма за '+days+' дней">'+fmt(s)+' ₽</td>'+
       '<td class="cm"><button type="button" class="pf-ib" data-com="'+r.k+'" aria-label="Комментарий к строке: '+esc(r.n)+'" aria-expanded="'+(vs.cform===r.k)+'">'+SI.com+(cm.length?'<span class="cnt">'+cm.length+'</span>':'')+'</button></td></tr>';
     if(cm.length||vs.cform===r.k){
